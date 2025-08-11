@@ -8,7 +8,7 @@ from aiogram.filters.command import Command
 
 TOKEN = os.getenv('TOKEN')
 bot = Bot(token=TOKEN)                        
-dp = Dispatcher()       
+dp = Dispatcher()      
 
 logging.basicConfig(
     filename="bot.log",
