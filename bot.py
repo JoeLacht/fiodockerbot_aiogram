@@ -74,7 +74,7 @@ async def handle_fio(message: Message):
 
     latin = transliterate(text)
     logging.info(f"Ответ пользователю {user_name} {user_id}: {latin}")
-    await message.answer(text=latin)
+    await message.reply(text=latin)
 
 if __name__ == "__main__":
     dp.run_polling(bot)
